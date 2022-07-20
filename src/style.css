@@ -11,6 +11,9 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-image: url(./img/bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header h1 {
