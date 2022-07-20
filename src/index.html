@@ -5,34 +5,63 @@
   <meta charset="utf-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@700&display=swap"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arvo&family=Inconsolata:wght@400;500&family=Montserrat:ital,wght@0,700;1,600&display=swap"
     rel="stylesheet">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-  <div id="root">
-    <h2>Projeto Cipher</h2>
-  </div>
-  <form>
-    <!-- Inputs da Msg -->
-    <p>
-      Mensagem:
-      <input type="text" id="inMsg">
-    </p>
-    <p>
-      Deslocamento:
-      <input type="text" id="inDesloc">
-    </p>
-    <!-- Botão para Cifrar -->
-    <input type="submit" value="CIFRAR">
-  </form>
-  <!-- Exibição da Saída -->
-  <p>Mensagem Cifrada:</p>
-  <h5></h5>
-  <h3></h3>
+  <header>
+    <h2> >>&nbsp</h2>
+    <h1 class="line typing-animation"> projeto cipher...</h1>
+    <br />
+  </header>
+  <section>
+    <p class="animate__animated animate__fadeInUp animate__delay-5s">>>&nbsp cryptografia de mensagens privadas.</p>
+  </section>
+  <main>
+    <form id="cifrar">
+      <label>>> Mensagem:</label><br />
+      <input type="text" id="inMsg"><br />
+
+      <label>>> Deslocamento:</label><br />
+      <input type="text" id="inDesloc"><br />
+
+      <input type="submit" value="CIFRAR">
+
+      <p>>> Mensagem Cifrada:</p>
+      <h5>Código</h5>
+      <h3>Palavra</h3>
+    </form>
+    <form id="decifrar">
+      <label>>> Mensagem:</label><br />
+      <input type="text" id="inMsg"><br />
+
+      <label>>> Deslocamento</label><br />
+      <input type="text" id="inDesloc"><br />
+
+      <input type="submit" value="DECIFRAR">
+      <p>>> Mensagem Decifrada:</p>
+      <h5>Código</h5>
+      <h3>Palavra</h3>
+    </form>
+  </main>
+
   <script src="index.js" type="module"></script>
+
+  <footer>
+    Projeto desenvolvido por Carol Alves, aluna da Laboratória ♥
+  </footer>
+
 </body>
 
 </html>
