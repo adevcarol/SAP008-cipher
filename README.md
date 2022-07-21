@@ -2,15 +2,32 @@
 
 ## Índice
 
-* [1. Prefácio](#1-prefácio)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
-* [9. Checklist](#9-checklist)
+- [Cifra de César](#cifra-de-césar)
+  - [Índice](#índice)
+  - [1. Prefácio](#1-prefácio)
+  - [2. Resumo do projeto](#2-resumo-do-projeto)
+  - [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
+    - [HTML](#html)
+    - [CSS](#css)
+    - [Web APIs](#web-apis)
+    - [JavaScript](#javascript)
+    - [Controle de Versões (Git e GitHub)](#controle-de-versões-git-e-github)
+    - [user-centricity](#user-centricity)
+    - [product-design](#product-design)
+  - [4. Considerações gerais](#4-considerações-gerais)
+  - [5. Critérios de aceitação mínimos do projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
+    - [Definição do produto](#definição-do-produto)
+    - [Interface do usuário (UI)](#interface-do-usuário-ui)
+    - [Scripts / Arquivos](#scripts--arquivos)
+    - [Deploy](#deploy)
+  - [6. Hacker Edition](#6-hacker-edition)
+  - [7. Considerações técnicas](#7-considerações-técnicas)
+  - [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
+    - [Primeiros passos](#primeiros-passos)
+    - [Recursos extras](#recursos-extras)
+  - [9. Checklist](#9-checklist)
+    - [Parte Obrigatória](#parte-obrigatória)
+    - [Parte Opcional: "Hacker edition"](#parte-opcional-hacker-edition)
 
 ***
 
@@ -257,6 +274,10 @@ A interface deve permitir ao usuário:
 * Ver o resultado da mensagem cifrada.
 * Inserir uma mensagem (texto) para ser decifrada.
 * Ver o resultado da mensagem decifrada.
+
+A interface foi pensada para ser simples e intuitiva com botões e inputs um abaixo do do outro seguindo a sequencia de codificar e decodificar, abaixo será apresentado o protótipo de baixa fidelidade:
+
+**********
 
 ### Scripts / Arquivos
 
