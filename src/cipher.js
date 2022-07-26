@@ -5,14 +5,13 @@ TABELA ASCII
 
 */
 
-function cipher() {
-    const encode = {
+const cipher = { encode, decode }
 
-    }
+function encode(offset, string) {
 
-    const decode = {
+}
 
-    }
+function decode(offset, string) {
 }
 
 export default cipher;
