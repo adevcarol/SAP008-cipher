@@ -5,18 +5,32 @@ TABELA ASCII
 
 */
 
-const cipher = { encode, decode } //funcoes
+const cipher = { encode, decode } // funcoes
 
-function encode(offset, text) { //parametros
-    let index = 0; // dentro do for será let
-    const asciiConvert = text.charCodeAt(index);
-    const letraDeslocada = ((asciiConvert - 65) + offset) % 26 + 65;
-    const letraCifrada = String.fromCharCode(letraDeslocada);
-    return letraCifrada
+function encode(offset, text) { // parametros
+    let resultEncode = "";
+    let numLetras = text.length;
+
+    for (let i = 0; i < numLetras; i++) { // index dentro do for
+        let asciiConvert = text.charCodeAt(i);
+        let letraDeslocada = (((asciiConvert - 65) + offset) % 26) + 65;
+        resultEncode = resultEncode.concat(String.fromCharCode(letraDeslocada));
+    }
+
+    return resultEncode;
 }
 
-
 function decode(offset, text) {
+    let resultDecode = "";
+    let numLetras = text.length;
+
+    for (let i = 0; i < numLetras; i++) { // index dentro do for
+        let asciiConvert = text.charCodeAt(i);
+        let letraDeslocada = (((asciiConvert - 90) - offset) % 26) + 90;
+        resultDecode = resultDecode.concat(String.fromCharCode(letraDeslocada));
+    }
+
+    return resultDecode;
 }
 
 export default cipher;
