@@ -16,7 +16,12 @@ function cifraDeCesar() {
     const valorEncode = cipher.encode(desloc, mensagem);
 
     console.log(valorEncode);
-    saidaStrC.innerText = valorEncode;
+    if (valorEncode === "") {
+        alert("Erro nos parâmetros, digite uma palavra e numero válidos")
+    }
+    else {
+        saidaStrC.innerText = valorEncode;
+    }
 }
 
 function decifraDeCesar() {

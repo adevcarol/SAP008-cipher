@@ -5,32 +5,36 @@ TABELA ASCII
 
 */
 
-const cipher = { encode, decode } // funcoes
+const cipher = {
+    encode: (offset, text) => { // declaração da função e parametros
+        if (typeof offset !== "number" || typeof text !== "string") {
+            throw new TypeError('Parâmetros Incorretos');
+        }
+        let resultEncode = "";
 
-function encode(offset, text) { // parametros
-    let resultEncode = "";
-    let numLetras = text.length;
+        for (let i = 0; i < text.length; i++) { // index dentro do for
+            let asciiConvert = text.charCodeAt(i);
+            let letraDeslocada = (((asciiConvert - 65) + offset) % 26) + 65;
+            resultEncode = resultEncode.concat(String.fromCharCode(letraDeslocada));
+        }
 
-    for (let i = 0; i < numLetras; i++) { // index dentro do for
-        let asciiConvert = text.charCodeAt(i);
-        let letraDeslocada = (((asciiConvert - 65) + offset) % 26) + 65;
-        resultEncode = resultEncode.concat(String.fromCharCode(letraDeslocada));
+        return resultEncode;
+    },
+    decode: (offset, text) => {
+        if (typeof offset !== "number" || typeof text !== "string") {
+            throw new TypeError('Parâmetros Incorretos');
+        }
+        let resultDecode = "";
+
+        for (let i = 0; i < text.length; i++) { // index dentro do for
+            let asciiConvert = text.charCodeAt(i);
+            let letraDeslocada = (((asciiConvert - 90) - offset) % 26) + 90;
+            resultDecode = resultDecode.concat(String.fromCharCode(letraDeslocada));
+        }
+
+        return resultDecode;
     }
 
-    return resultEncode;
-}
-
-function decode(offset, text) {
-    let resultDecode = "";
-    let numLetras = text.length;
-
-    for (let i = 0; i < numLetras; i++) { // index dentro do for
-        let asciiConvert = text.charCodeAt(i);
-        let letraDeslocada = (((asciiConvert - 90) - offset) % 26) + 90;
-        resultDecode = resultDecode.concat(String.fromCharCode(letraDeslocada));
-    }
-
-    return resultDecode;
 }
 
 export default cipher;

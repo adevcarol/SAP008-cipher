@@ -1,14 +1,6 @@
-body {
-    background-image: url(/SAP008-cipher/src/img/bg.jpeg);
-    background-repeat: no-repeat;
-}
-
-img {
-    width: 100%;
-}
-
 * {
     margin: 0px;
+
 }
 
 header {
@@ -16,7 +8,7 @@ header {
     color: #05F140;
     height: 200px;
     width: 100%;
-    padding-top: 120px;
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -92,7 +84,7 @@ form {
     margin-right: 35px;
     border-radius: 1ch;
     border: #05F140 solid;
-    width: 370px;
+    width: 390px;
     height: 300px;
 }
 
@@ -121,7 +113,15 @@ body section {
     align-items: center;
 }
 
-body main form #barra {
+body main form #barra_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    padding-bottom: 15px;
+}
+
+body main form #barra_right {
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -148,7 +148,7 @@ body main form input {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
     font-size: 20px;
     font-family: 'Inconsolata', monospace;
     background-color: #000;
