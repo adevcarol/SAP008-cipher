@@ -1,37 +1,20 @@
 # Cifra de César
 
+Link do projeto em funcionamento: https://adevcarol.github.io/SAP008-cipher/src/index.html
 ## Índice
 
-- [Cifra de César](#cifra-de-césar)
-  - [Índice](#índice)
-  - [1. Prefácio](#1-prefácio)
-  - [2. Resumo do projeto](#2-resumo-do-projeto)
-  - [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-    - [HTML](#html)
-    - [CSS](#css)
-    - [Web APIs](#web-apis)
-    - [JavaScript](#javascript)
-    - [Controle de Versões (Git e GitHub)](#controle-de-versões-git-e-github)
-    - [user-centricity](#user-centricity)
-    - [product-design](#product-design)
-  - [4. Considerações gerais](#4-considerações-gerais)
-  - [5. Critérios de aceitação mínimos do projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
-    - [Definição do produto](#definição-do-produto)
-    - [Interface do usuário (UI)](#interface-do-usuário-ui)
-    - [Scripts / Arquivos](#scripts--arquivos)
-    - [Deploy](#deploy)
-  - [6. Hacker Edition](#6-hacker-edition)
-  - [7. Considerações técnicas](#7-considerações-técnicas)
-  - [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
-    - [Primeiros passos](#primeiros-passos)
-    - [Recursos extras](#recursos-extras)
-  - [9. Checklist](#9-checklist)
-    - [Parte Obrigatória](#parte-obrigatória)
-    - [Parte Opcional: "Hacker edition"](#parte-opcional-hacker-edition)
+- [Índice](#índice)
+- [1. Sobre](#1-sobre)
+- [2. Objetivos](#2-objetivos)
+- [3. Contexto](#3-contexto)
+- [4. Funcionalidades](#4-funcionalidades)
+- [5. Implementações futuras](#5-implementações-futuras)
+- [6. Ferramentas](#6-ferramentas)
+- [7. Considerações finais](#7-ferramentas)
 
 ***
 
-## 1. Prefácio
+## 1. Sobre
 
 Cifrar significa codificar. A [cifra de César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar)
 é um dos primeiros tipos de criptografias conhecidas na história.
@@ -58,7 +41,7 @@ mas a cifra de César muitas vezes pode fazer parte de um sistema
 mais complexo de criptografia, como
 a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
-## 2. Resumo do projeto
+## Resumo do projeto
 
 Neste projeto você criará a primeira aplicação web do _bootcamp_. Nela o usuário
 poderá cifrar e decifrar um texto indicando a chave de deslocamento (_offset_).
@@ -78,191 +61,77 @@ Neste projeto você aprenderá a construir uma aplicação web (_WebApp_) que ir
 interagir com o usuário final através do navegador utilizando HTML, CSS e
 JavaScript como ferramentas.
 
-## 3. Objetivos de aprendizagem
+## 2. Objetivos
 
 Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
 
 ### HTML
 
-- [ ] **Uso de HTML semântico**
-
-  <details><summary>Links</summary><p>
-
-  * [HTML semântico](https://curriculum.laboratoria.la/pt/topics/html/02-html5/02-semantic-html)
-  * [Semantics in HTML - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-</p></details>
+-  **Uso de HTML semântico**
 
 ### CSS
 
-- [ ] **Uso de seletores de CSS**
+- **Uso de seletores de CSS**
 
-  <details><summary>Links</summary><p>
-
-  * [Intro a CSS](https://curriculum.laboratoria.la/pt/topics/css/01-css/01-intro-css)
-  * [CSS Selectors - MDN](https://developer.mozilla.org/pt_BR/docs/Web/CSS/CSS_Selectors)
-</p></details>
-
-- [ ] **Empregar o modelo de caixa (box model): borda, margem, preenchimento**
-
-  <details><summary>Links</summary><p>
-
-  * [Modelo de Caixa e Display](https://curriculum.laboratoria.la/pt/topics/css/01-css/02-boxmodel-and-display)
-  * [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-  * [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  * [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
-  * [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
-</p></details>
+- **Empregar o modelo de caixa (box model): borda, margem, preenchimento**
 
 ### Web APIs
 
-- [ ] **Uso de seletores de DOM**
+- **Uso de seletores de DOM**
 
-  <details><summary>Links</summary><p>
+- **Manipulação de eventos de DOM**
 
-  * [Modificando o DOM](https://curriculum.laboratoria.la/pt/topics/browser/02-dom/03-1-dom-methods-selection)
-  * [Introdução ao DOM - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-  * [Locating DOM elements using selectors - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
-</p></details>
-
-- [ ] **Manipulação de eventos de DOM**
-
-  <details><summary>Links</summary><p>
-
-  * [Introdução a eventos - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events)
-  * [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener)
-  * [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/removeEventListener)
-  * [Objeto Event](https://developer.mozilla.org/pt-BR/docs/Web/API/Event)
-</p></details>
-
-- [ ] **Manipulação dinâmica de DOM**
-
-  <details><summary>Links</summary><p>
-
-  * [Introdução ao DOM](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
-  * [Node.appendChild() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild)
-  * [Document.createElement() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement)
-  * [Document.createTextNode()](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createTextNode)
-  * [Element.innerHTML - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML)
-  * [Node.textContent - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent)
-</p></details>
+- **Manipulação dinâmica de DOM**
 
 ### JavaScript
 
-- [ ] **Tipos de dados primitivos**
+- **Tipos de dados primitivos**
 
-  <details><summary>Links</summary><p>
+- **Strings (cadeias de caracteres)**
 
-  * [Valores Primitivos - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Data_structures#valores_primitivos)
-</p></details>
+- **Variáveis (declaração, atribuição, escopo)**
 
-- [ ] **Strings (cadeias de caracteres)**
+- **Uso de condicionais (if-else, switch, operador ternário)**
 
-  <details><summary>Links</summary><p>
+- **Uso de laços (for, for..of, while)**
 
-  * [Strings](https://curriculum.laboratoria.la/pt/topics/javascript/06-strings)
-  * [String - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String)
-</p></details>
+- **Uso de funções (parâmetros, argumentos, valor de retorno)**
 
-- [ ] **Variáveis (declaração, atribuição, escopo)**
+- **Testes unitários**
 
-  <details><summary>Links</summary><p>
+- **Módulos de ECMAScript (ES modules)**
 
-  * [Valores, tipos de dados e operadores](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/01-values-variables-and-types)
-  * [Variáveis](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/02-variables)
-</p></details>
+- **Uso de linter (ESLINT)**
 
-- [ ] **Uso de condicionais (if-else, switch, operador ternário)**
-
-  <details><summary>Links</summary><p>
-
-  * [Estruturas condicionais e repetitivas](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/01-conditionals-and-loops)
-  * [Tomando decisões no seu código — condicionais - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals)
-</p></details>
-
-- [ ] **Uso de laços (for, for..of, while)**
-
-  <details><summary>Links</summary><p>
-
-  * [Laços (Loops)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/02-loops)
-  * [Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
-</p></details>
-
-- [ ] **Uso de funções (parâmetros, argumentos, valor de retorno)**
-
-  <details><summary>Links</summary><p>
-
-  * [Funções (controle de fluxo)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/03-functions)
-  * [Funções clássicas](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/01-classic)
-  * [Arrow Functions](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/02-arrow)
-  * [Funções — blocos reutilizáveis de código - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Functions)
-</p></details>
-
-- [ ] **Testes unitários**
-
-  <details><summary>Links</summary><p>
-
-  * [Introdução ao Jest - Documentação oficial](https://jestjs.io/docs/pt-BR/getting-started)
-</p></details>
-
-- [ ] **Módulos de ECMAScript (ES modules)**
-
-  <details><summary>Links</summary><p>
-
-  * [import - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
-  * [export - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
-</p></details>
-
-- [ ] **Uso de linter (ESLINT)**
-
-- [ ] **Uso de identificadores descritivos (Nomenclatura | Semântica)**
+- **Uso de identificadores descritivos (Nomenclatura | Semântica)**
 
 ### Controle de Versões (Git e GitHub)
 
-- [ ] **Git: Instalação e configuração**
+- **Git: Instalação e configuração**
 
-- [ ] **Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
+- **Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
 
-- [ ] **GitHub: Criação de contas e repositórios, configuração de chave SSH**
+- **GitHub: Criação de contas e repositórios, configuração de chave SSH**
 
-- [ ] **GitHub: Implantação com GitHub Pages**
-
-  <details><summary>Links</summary><p>
-
-  * [Site oficial do GitHub Pages](https://pages.github.com/)
-</p></details>
+- **GitHub: Implantação com GitHub Pages**
 
 ### user-centricity
 
-- [ ] **Desenhar a aplicação pensando e entendendo a usuária**
+- **Desenhar a aplicação pensando e entendendo a usuária**
 
 ### product-design
 
-- [ ] **Criar protótipos para obter feedback e iterar**
+- **Criar protótipos para obter feedback e iterar**
 
-- [ ] **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
+- **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
 
-## 4. Considerações gerais
 
-* Este projeto deve ser resolvido individualmente.
-* O projeto será entregue subindo o seu código no GitHub (commit/push) e o
-  deploy será feito no GitHub Pages. Se não sabe o que é o GitHub, não se
-  preocupe, você aprendera durante o projeto.
-* Tempo para completar: tempo referência 2 semanas.
-
-## 5. Critérios de aceitação mínimos do projeto
-
-Use o alfabeto simples (somente maiúsculas e sem ç):
-
-* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+## 3. Contexto
 
 ### Definição do produto
 
-No README.md, escreva como você definiu seu usuário e qual foi o processo para
-definir o produto final a nível de expriência e interface.
-
-* Quem são os principais usuário do produto?
-* Quais são os objetivos do usuário em relação com o produto?
-* Como você acredita que o produto está resolvendo os problemas do usuário?
+- A aplicação destina-se a usuários que necessitem cryptografar e descriptografar palavras
+- Com uma interefaçe intuitiva o projeto cipher tem como finalidade simplificar a vida de quem enviar mensagens de forma secreta ou precisa criar senhas bem mais seguras e de difícil interpretação de terceiros.
 
 ### Interface do usuário (UI)
 
@@ -277,50 +146,15 @@ A interface deve permitir ao usuário:
 
 A interface foi pensada para ser simples e intuitiva com botões e inputs um abaixo do do outro seguindo a sequencia de codificar e decodificar, abaixo será apresentado o protótipo de baixa fidelidade:
 
+![prototipo-baixa-fidelidade](/SAP008-cipher/src/img/prototipo_baixa_fidelidade.PNG)
+
 **********
 
-### Scripts / Arquivos
+## 4. Funcionalidades
 
-* `REAME.md`: deve explicar como "deployar", instalar e executar a aplicação,
-  assim como uma introdução a aplicação, suas funcionalidades e as decisões que
-  foram tomadas.
-* `src/index.html`: aqui será o ponto de entrada da sua aplicação. Este arquivo
-  deve conter a marcação HTML e chamar o CSS e JavaScript necessários.
-* `src/cipher.js`: aqui você deve implementar o objeto `cipher`, o qual já está
-  _exportado_ no _boilerplate_. Este objeto (`cipher`) deve conter dois métodos:
-  - `cipher.encode(offset, string)`: `offset` é o número de posições que
-      queremos mover para a direita no alfabeto e `string` é a mensagem (texto)
-      que queremos cifrar.
-  - `cipher.decode(offset, string)`: `offset` é o número de posições que
-      queremos mover para a esquerda no alfabeto e `string` é a mensagem (texto)
-      que queremos decifrar.
-* `src/index.js`: aqui você deve escutar os eventos de DOM, chamar
-  `cipher.encode()` e `cipher.decode()`.
-* `test/cipher.spec.js`: este arquivo contem alguns testes de exemplo e aqui
-  você deve implementar os testes para `cipher.encode()` e `cipher.decode()`.
+A interfaçe conta 
 
-### Deploy
-
-Disponibilizar os projetos e colocá-los "no ar" vai ser parte cotidiana do
-ciclo de desenvolvimento em produtos de tecnologia.
-
-Para este projeto, utilizaremos o Github Pages para essa finalidade.
-O comando `npm run deploy` pode te auxiliar nessa tarefa e você pode também
-consultar a [documentação oficial](https://docs.github.com/pt/pages).
-
-## 6. Hacker Edition
-
-As seções chamadas _Hacker Edition_ são **opcionais**. Se você **terminou** tudo
-e ainda sobrou tempo, faça essa parte. Assim você poderá aprofundar e exercitar
-mais sobre os objetivos de aprendizagem do projeto.
-
-A descrição geral deste projeto não menciona o que aconteceria com letras
-minúsculas ou outros caracteres (como espaço, pontuação, ç, ...). O
-_boilerplate_ inclui alguns testes (comentados) que vocês podem usar como ponto
-de partida para implementar o suporte para esses casos.
-
-Também não foi mencionado o que aconteceria com _offset_ negativo. Como parte da
-hacker edition te convidamos a explorar esse caso sozinha.
+![projeto-finalizado](/SAP008-cipher/src/img/projeto-finalizado.gif)
 
 ## 7. Considerações técnicas
 
