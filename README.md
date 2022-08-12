@@ -160,7 +160,7 @@ A interface conta com elementos que remetem ao terminal para homenagear nos prog
 
 Foi pensada para ser simples e intuitiva com botões e inputs um abaixo do do outro seguindo a sequencia de codificar e decodificar, abaixo será apresentado o protótipo de baixa fidelidade:
 
-![prototipo-baixa-fidelidade](/SAP008-cipher/src/img/prototipo_baixa_fidelidade.PNG)
+![prototipo-baixa-fidelidade](https://github.com/adevcarol/SAP008-cipher/src/img/prototipo_baixa_fidelidade.PNG)
 
 **********
 
@@ -168,7 +168,7 @@ Foi pensada para ser simples e intuitiva com botões e inputs um abaixo do do ou
 
 A pagina conta com dois campos com dois inputs cada onde devem ser inseridos a palavra e o deslocamento da mesma, respectivamente. Ao clicar no botao cifrar a palavra sera codificada e ao clicar no botao decifrar retornarara a palavra decifrada
 
-![projeto-finalizado](/SAP008-cipher/src/img/projeto-finalizado.gif)
+![projeto-finalizado](https://github.com/adevcarol/SAP008-cipher/src/img/projeto-finalizado.gif)
 
 ## 5. Implementações futuras
 
