@@ -30,5 +30,10 @@ function decifraDeCesar() {
     const valorDecode = cipher.decode(desloc, mensagem);
 
     console.log(valorDecode);
-    saidaStrD.innerText = valorDecode;
+    if (valorDecode === "") {
+        alert("Erro nos parâmetros, digite uma palavra e numero válidos")
+    }
+    else {
+        saidaStrD.innerText = valorDecode;
+    }
 }

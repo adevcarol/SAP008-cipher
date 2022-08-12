@@ -3,14 +3,26 @@
 Link do projeto em funcionamento: https://adevcarol.github.io/SAP008-cipher/src/index.html
 ## Índice
 
-- [Índice](#índice)
-- [1. Sobre](#1-sobre)
-- [2. Objetivos](#2-objetivos)
-- [3. Contexto](#3-contexto)
-- [4. Funcionalidades](#4-funcionalidades)
-- [5. Implementações futuras](#5-implementações-futuras)
-- [6. Ferramentas](#6-ferramentas)
-- [7. Considerações finais](#7-ferramentas)
+- [Cifra de César](#cifra-de-césar)
+  - [Índice](#índice)
+  - [1. Sobre](#1-sobre)
+  - [Resumo do projeto](#resumo-do-projeto)
+  - [2. Objetivos](#2-objetivos)
+    - [HTML](#html)
+    - [CSS](#css)
+    - [Web APIs](#web-apis)
+    - [JavaScript](#javascript)
+    - [Controle de Versões (Git e GitHub)](#controle-de-versões-git-e-github)
+    - [user-centricity](#user-centricity)
+    - [product-design](#product-design)
+  - [3. Contexto](#3-contexto)
+    - [Definição do produto](#definição-do-produto)
+    - [Interface do usuário (UI)](#interface-do-usuário-ui)
+  - [4. Funcionalidades](#4-funcionalidades)
+  - [5. Implementações futuras](#5-implementações-futuras)
+  - [6. Ferramentas](#6-ferramentas)
+    - [Checklist](#checklist)
+    - [Parte Obrigatória](#parte-obrigatória)
 
 ***
 
@@ -144,7 +156,9 @@ A interface deve permitir ao usuário:
 * Inserir uma mensagem (texto) para ser decifrada.
 * Ver o resultado da mensagem decifrada.
 
-A interface foi pensada para ser simples e intuitiva com botões e inputs um abaixo do do outro seguindo a sequencia de codificar e decodificar, abaixo será apresentado o protótipo de baixa fidelidade:
+A interface conta com elementos que remetem ao terminal para homenagear nos programadoras e foi inspirada em um terminal.
+
+Foi pensada para ser simples e intuitiva com botões e inputs um abaixo do do outro seguindo a sequencia de codificar e decodificar, abaixo será apresentado o protótipo de baixa fidelidade:
 
 ![prototipo-baixa-fidelidade](/SAP008-cipher/src/img/prototipo_baixa_fidelidade.PNG)
 
@@ -152,126 +166,19 @@ A interface foi pensada para ser simples e intuitiva com botões e inputs um aba
 
 ## 4. Funcionalidades
 
-A interfaçe conta 
+A pagina conta com dois campos com dois inputs cada onde devem ser inseridos a palavra e o deslocamento da mesma, respectivamente. Ao clicar no botao cifrar a palavra sera codificada e ao clicar no botao decifrar retornarara a palavra decifrada
 
 ![projeto-finalizado](/SAP008-cipher/src/img/projeto-finalizado.gif)
 
-## 7. Considerações técnicas
+## 5. Implementações futuras
 
-A lógica do projeto deve estar implementada inteiramente em JavaScript. Nesse
-projeto **NÃO** está permitido usar bibliotecas ou frameworks, só vanilla
-JavaScript.
+* [ ] Cifrar/decifrar minúsculas.
+* [ ] Cifrar/decifrar _outros_ caractéres (espaços, pontuação, `ç`, `á`, ...).
+* [ ] Permitir usar `offset` negativo.
 
-Os testes unitários devem cobrir no mínimo de 70% dos _statements_, _functions_
-e _lines_, e um mínimo de 50% de _branches_. O _boilerplate_ já contem o setup e
-configurações necessárias para executar os testes assim como _code coverage_
-para ver o nível de cobertura dos testes usando o comando `npm test`.
 
-O _boilerplate_ inclui testes de exemplo, como ponto de partida.
 
-Para começar esse projeto você terá que fazer um _fork_ e _clonar_ este
-repositório que contém o _boilerplate_.
-
-O _boilerplate_ contém uma estrutura de arquivos como ponto de partida assim
-como toda a configuração de dependências e testes de exemplo:
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── cipher.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── cipher.spec.js
-```
-
-O _boilerplate_ inclui tarefas que executam [eslint](https://eslint.org/) e
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar o `HTML` e
-`JavaScript` com respeito a uma guia de estilos. Ambas tarefas são executadas
-automaticamente antes de executar os testes quando usamos o comando `npm run
-test`.
-
-No caso do `JavaScript` estamos usando o `eslint` que está configurado no
-arquivo `.eslintrc` que contem o mínimo de informação como versão do
-JavaScript/ECMAScript, o ambiente (_browser_ nesse caso) e as [regras
-recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
-
-Nas regras/guias de estilo usaremos das recomendações padrão tanto para o
-`eslint` quanto `htmlhint`.
-
-***
-
-## 8. Guias, dicas e leituras complementares
-
-### Primeiros passos
-
-1. Antes de mais nada, se assegure de ter um bom :pencil: editor de texto, algo
-   como [Code](https://code.visualstudio.com/) ou [Atom](https://atom.io/).
-2. Para executar os comandos você precisará de um :shell: UNIX Shell, que é um
-   programa que interpreta linhas de comando (command-line interpreter) e também
-   deve ter o git instalado. Se você usa um sistema operacional "UNIX-like",
-   como GNU/Linux ou MacOS, você já tem um _shell_ (terminal) instalado (e
-   provavelmente o `git` também). Se você usa Windows você pode usar o [Git
-   bash](https://git-scm.com/download/win), embora seja recomendado que você
-   teste :penguin: GNU/Linux.
-3. Faça seu próprio :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) do repositório. Seus
-   _mentores_ compartilharão com você um _link_ para um repositório privado e te
-   darão acesso a este repositório.
-4. :arrow_down: [Clone](https://help.github.com/articles/cloning-a-repository/)
-   o _fork_ para seu computador (cópia local).
-5. 📦 Instale as dependências do projeto rodando o comando `npm install`. Mas
-   antes disso tenha certeza de ter instalado o [Node.js](https://nodejs.org/)
-   (que inclui o [npm](https://docs.npmjs.com/)).
-6. Se tudo foi bem, você deve conseguir executar os :traffic_light: testes
-   unitários com o comando `npm test`.
-7. Para ver a interface do seu programa no navegador, use o comando `npm start`
-   para iniciar o servidor web e entre na url `http://localhost:5000` no seu
-   navegador.
-8. Let's Code! :rocket:
-
-Este [video](https://drive.google.com/file/d/1CM6ZfpGfJMF6A8IcXoK5cFBBq-CY8oBR/view?usp=sharing)
-da Paloma também pode te ajudar nos seus primeiros passos ;)
-
-### Recursos extras
-
-A seguir um vídeo do Daniel que te ajudará a entender a fórmula matemática usada
-pela Cifra de César e algumas coisas mais que deve saber para resolver o seu
-projeto. Escute com atenção e siga seus conselhos ! :)
-
-[![Dicas Cifra de
-César](https://img.youtube.com/vi/utiLWBXmNQU/0.jpg)](https://www.youtube.com/watch?v=utiLWBXmNQU)
-
-Desenho da experiência do usuário (User Experience Design):
-
-* Ideação
-* Prototipagem
-* Teste e iteração
-
-Desenvolvimento Front-end:
-
-* Valores
-* Tipos
-* Variáveis
-* Controle de fluxo
-* Testes unitários
-* [Aprenda mais sobre
-  `charCodeAt()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
-* [Aprenda mais sobre
-  `String.fromCharCode()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
-* [Aprenda mais sobre
-  `ASCII`](https://web.fe.up.pt/~ee96100/projecto/Tabela%20ascii.htm)
-* [Documentação do NPM](https://docs.npmjs.com/)
-
-Ferramentas:
+## 6. Ferramentas
 
 * [Terminal](https://www.loom.com/share/29a6cf0f3c5245bf995738284b706468)
 * [Git config](https://www.loom.com/share/c7d445872b9f4618a24605fdcb26a48d)
@@ -286,8 +193,7 @@ Organização do trabalho:
   conceitos ao longo do _bootcamp_.
 * [Guia em espanhol para a
   cifra](https://docs.google.com/presentation/d/e/2PACX-1vTQ7-8LZDHrT4Y6AOBN72Nkfz1eJAeseBHpcHX8BSq0aFCFoZmuMjluMeyFNgK9ISKxTz0H03yGfJiT/pub?start=false&loop=false&delayms=60000)
-
-## 9. Checklist
+### Checklist
 
 Essa seção é para te ajudar a ter um controle do que você precisa completar.
 
@@ -312,8 +218,4 @@ Essa seção é para te ajudar a ter um controle do que você precisa completar.
 * [ ] Interface que permita escrever um texto para ser decifrado.
 * [ ] Interface que mostre o resultado decifrado corretamente.
 
-### Parte Opcional: "Hacker edition"
 
-* [ ] Cifrar/decifrar minúsculas.
-* [ ] Cifrar/decifrar _outros_ caractéres (espaços, pontuação, `ç`, `á`, ...).
-* [ ] Permitir usar `offset` negativo.

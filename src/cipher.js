@@ -34,7 +34,6 @@ const cipher = {
 
         return resultDecode;
     }
-
 }
 
 export default cipher;
