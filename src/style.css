@@ -1,23 +1,28 @@
 * {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
 
+body{
+    height: 100%;
+    height: 100vh;
+    background-color: #000;
 }
 
 header {
-    background-color: #000;
     color: #05F140;
-    height: 200px;
+    padding: 16rem 0;
     width: 100%;
-    padding-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+/* header animation */
 header h1 {
     border-right: 2px solid rgba(255, 255, 255, .75);
-    font-family: 'Inconsolata', monospace;
     font-size: 5em;
     white-space: nowrap;
     overflow: hidden;
@@ -47,23 +52,16 @@ header h1 {
     }
 }
 
-header h2 {
-    font-family: 'Inconsolata', monospace;
+.cipher-icon {
     color: #BF1363;
-    font-size: 50px;
+    font-size: 4rem;
 }
 
-body main form h3 {
-    font-family: 'Inconsolata', monospace;
-    color: #BF1363;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+section h2 {
+    font-weight: 500;
 }
 
-main {
+main{
     background-color: #000;
     display: flex;
     flex-direction: row;
@@ -74,18 +72,50 @@ main {
     font-size: 20px
 }
 
-form {
-    background-color: #000;
+.box-window{
+    width: 70%;
+    height: 40rem;
     color: #05F140;
-    font-family: 'Inconsolata', monospace;
-    padding: 15px;
-    margin: 10px;
-    margin-left: 35px;
-    margin-right: 35px;
-    border-radius: 1ch;
-    border: #05F140 solid;
-    width: 390px;
-    height: 300px;
+    padding: 2rem;
+    border-radius: 1.6rem;
+    border: 0.2rem solid #05F140;
+}
+
+#barra-left{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+}
+
+.box-window input{
+    background-color: #05F140;
+    border: none;
+    color: #000;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 0.4rem;
+}
+
+::placeholder {
+    color: #1c8a37f6;
+}
+
+.box-window label {
+    color: #05F140;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+body main form h3 {
+    color: #BF1363;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -111,22 +141,6 @@ body section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-body main form #barra_left {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: right;
-    padding-bottom: 15px;
-}
-
-body main form #barra_right {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: right;
-    padding-bottom: 15px;
 }
 
 body main form input {
@@ -155,6 +169,3 @@ body main form input {
     color: #05F140;
 }
 
-::placeholder {
-    color: #1c8a37f6;
-}

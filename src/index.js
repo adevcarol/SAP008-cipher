@@ -1,6 +1,5 @@
 import cipher from './cipher.js';
 
-// variáveis de entrada (retorno do HTML)
 const btnCifrar = document.querySelector("#botaoCifrar");
 const saidaStrC = document.querySelector("#h3cifrar");
 const btnDecifrar = document.querySelector("#botaoDecifrar");
@@ -8,7 +7,6 @@ const saidaStrD = document.querySelector("#h3decifrar");
 
 btnCifrar.addEventListener('click', cifraDeCesar);
 btnDecifrar.addEventListener('click', decifraDeCesar);
-// evento para quando o botão de cifrar for clicado
 
 function cifraDeCesar() {
     const mensagem = document.querySelector("#inMsgC").value.toUpperCase();

@@ -23,34 +23,30 @@
 <body>
 
   <header>
-    <h2> $&nbsp</h2>
+    <div class="cipher-icon"> $&nbsp</div>
     <h1 class="line typing-animation"> projeto cipher...</h1>
     <br />
   </header>
   <section>
-    <p class="crypto-animation">$&nbsp cryptografia de palavras secretas.
-    </p>
+    <h2>
+      $&nbsp cryptografia de palavras secretas
+    </h2>
   </section>
   <main>
-    <form>
-      <div id="barra_left">
+    <form class="box-window">
+      <div id="barra-left">
         <p>_ o x</p>
       </div>
       <label>$ palavra:</label>
-      <input type="text" id="inMsgC" placeholder="digite uma palavra..."><br />
-      <br />
+      <input type="text" id="inMsgC" placeholder="digite uma palavra..."><br>
       <label>$ deslocamento:</label>
-      <input type="text" id="inDeslocC" placeholder="digite um número..."><br />
-      <br />
+      <input type="text" id="inDeslocC" placeholder="digite um número..."><br>
       <input type="button" id="botaoCifrar" value="cifrar">
-      <br />
-      <br />
       <p>$ palavra cifrada:</p>
-      <br />
-      <br />
       <h3 id="h3cifrar">$ palavra</h3>
     </form>
-    <form>
+
+    <!-- <form>
       <div id="barra_right">
         <p>_ o x</p>
       </div>
@@ -67,7 +63,8 @@
       <br />
       <br />
       <h3 id="h3decifrar">$ palavra</h3>
-    </form>
+    </form> -->
+
   </main>
 
   <div id="lab">
@@ -75,13 +72,11 @@
       #Lab
     </p>
   </div>
-
-  <script src="index.js" type="module"></script>
-
   <footer>
     Projeto desenvolvido por Carol Alves, aluna da Laboratória ♥
   </footer>
 
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>
