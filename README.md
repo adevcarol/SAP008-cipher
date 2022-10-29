@@ -1,9 +1,9 @@
 # Cifra de César
 
+*-- Projeto em refatoração
+
 Link do projeto em funcionamento: https://adevcarol.github.io/SAP008-cipher/src/index.html
 ## Índice
-
-** Em Processo de refatoração
 
 - [Cifra de César](#cifra-de-césar)
   - [Índice](#índice)
